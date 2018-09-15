@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2036
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MetricAnalyzerSoftwareQuality", "MetricAnalyzerSoftwareQuality\MetricAnalyzerSoftwareQuality.csproj", "{D1F0C49F-7016-4FAC-8F84-3C8C2055E285}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTestProject", "UnitTestProject\UnitTestProject.csproj", "{82826D34-8E05-4EF0-B738-BBC252320A78}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D1F0C49F-7016-4FAC-8F84-3C8C2055E285}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D1F0C49F-7016-4FAC-8F84-3C8C2055E285}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D1F0C49F-7016-4FAC-8F84-3C8C2055E285}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D1F0C49F-7016-4FAC-8F84-3C8C2055E285}.Release|Any CPU.Build.0 = Release|Any CPU
+		{82826D34-8E05-4EF0-B738-BBC252320A78}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{82826D34-8E05-4EF0-B738-BBC252320A78}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{82826D34-8E05-4EF0-B738-BBC252320A78}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{82826D34-8E05-4EF0-B738-BBC252320A78}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6DCB6328-E0C9-494D-9C6E-369721B1D21C}
+	EndGlobalSection
+EndGlobal

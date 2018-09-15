@@ -1,0 +1,57 @@
+﻿<Window x:Class="MetricAnalyzerSoftwareQuality.ViewWindowOfMetric"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MetricAnalyzerSoftwareQuality"
+        mc:Ignorable="d"
+        Title="Множина метрик якості ПЗ"  Height="500" Width="700" Icon="Images/icon_main.png" ResizeMode="NoResize" WindowStyle="None" Background="{x:Null}" BorderBrush="#FF5E86F0">
+    <Border BorderBrush="#FF3D71E0" Margin="1">
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="17"/>
+                <ColumnDefinition Width="666"/>
+                <ColumnDefinition Width="17"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="34*"/>
+                <RowDefinition Height="407*"/>
+                <RowDefinition Height="57*"/>
+            </Grid.RowDefinitions>
+            <Grid.Background>
+                <SolidColorBrush Color="#FFF4F7FC"/>
+            </Grid.Background>
+            <DockPanel Grid.RowSpan="3" Grid.ColumnSpan="3">
+                <DockPanel Name="titleBar" DockPanel.Dock="Top" Height="35" Background="#FF1F75DC">
+                    <TextBlock Padding="8" VerticalAlignment="Center" HorizontalAlignment="Center" Text="Множина метрик якості ПЗ" Foreground="White" FontSize="24" FontFamily="Calibri" FontWeight="Bold"/>
+                </DockPanel>
+
+
+                <!--^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^-->
+                <DataGrid x:Name="AllMetricsInfo_dataGrid" Grid.Column="1" Grid.ColumnSpan="1" VerticalScrollBarVisibility="Auto" ItemsSource = "{Binding MyTableInfo_OfAllMetrics}" RowHeight="23" Height="Auto" Margin="0,28,0,0" VerticalAlignment="Top" Width="670" BorderBrush="{x:Null}" AlternationCount="2" FrozenColumnCount="4" FontFamily="Bookman Old Style" FontSize="16" Cursor="Hand" AutoGenerateColumns="False" CanUserAddRows="False" CanUserDeleteRows="False" HorizontalGridLinesBrush="#FFD9EBF7" VerticalGridLinesBrush="{x:Null}" GridLinesVisibility="Horizontal" AutomationProperties.IsRowHeader="False" EnableRowVirtualization="False" HorizontalAlignment="Center" Foreground="#FF4134C3" AlternatingRowBackground="#FFF1FAFD" IsReadOnly="True" Padding="0">
+                    <DataGrid.Background>
+                        <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.InactiveBorderColorKey}}"/>
+                    </DataGrid.Background>
+                    <DataGrid.Columns>
+                        <DataGridTextColumn Binding="{Binding Number}" Foreground="#FF2840DA" Header="№ " Width="30"/>
+                        <DataGridTextColumn Binding="{Binding MAX}" Foreground="#FF2840DA" Header="  MAX"  Width="75"/>
+                        <DataGridTextColumn Binding="{Binding MIN}" Foreground="#FF2840DA" Header="MIN"  Width="46"/>
+                        <DataGridTextColumn Binding="{Binding Count}" Foreground="#FF2840DA" Header="К-сть парам."  Width="113"/>
+                        <DataGridTextColumn Binding="{Binding Name}" Foreground="#FFA82B1E" Header="                  Назва метрики" Width="Auto"/>
+                    </DataGrid.Columns>
+                </DataGrid>
+                <!--^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^-->
+            </DockPanel>
+
+            <!--^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^-->
+            <Button x:Name="CloseViewMetrics_Button" Content="Закрити" HorizontalAlignment="Left" Height="41" Margin="385,0,0,0" Grid.Row="2" VerticalAlignment="Top" Width="221" FontWeight="Normal" FontFamily="Impact" Foreground="#FF403F5F" BorderBrush="{x:Null}" FontSize="22" Grid.Column="1" Click="CloseViewMetrics_Button_Click">
+                <Button.Background>
+                    <ImageBrush ImageSource="Images/IconButton/btn_analyze.png"/>
+                </Button.Background>
+            </Button>
+            <!--^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^-->
+
+        </Grid>
+    </Border>
+</Window>
+

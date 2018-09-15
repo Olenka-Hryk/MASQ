@@ -1,0 +1,22 @@
+﻿<Window x:Class="MetricAnalyzerSoftwareQuality.Welcome_splash_window"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MetricAnalyzerSoftwareQuality"
+        mc:Ignorable="d"
+        Title="Welcome_splash_window" 
+        Height="470" Width="700" 
+        Icon="Images/icon_main.png" 
+        ResizeMode="NoResize"
+        WindowStyle="None" AllowsTransparency="True" WindowStartupLocation="CenterScreen" VerticalAlignment="Top" Foreground="{x:Null}" Cursor="Wait">
+    <Window.Background>
+        <ImageBrush ImageSource="Images/image_start.png"/>
+    </Window.Background>
+    <Grid>
+        <ProgressBar Minimum="0" Maximum="100" Name="pbWait" Height="8" Margin="71,262,71,0" VerticalAlignment="Top" Value="{Binding WorkerState}"/>
+        <Label Content="MASQ 1.0" HorizontalAlignment="Left" Margin="152,32,0,0" VerticalAlignment="Top" Width="422" Height="106" Foreground="#FFF5E6F5" FontSize="92" FontFamily="Forte"/>
+        <Label Content="Metric Analyzer Software Quality"  HorizontalAlignment="Left" Margin="92,138,0,0" VerticalAlignment="Top" Width="550" Height="62" Foreground="#FFF9CAF9" FontSize="36" FontFamily="Forte"></Label>
+        <Label Content="© 2018 Andrushchakevych"  HorizontalAlignment="Left" Margin="374,228,0,0" VerticalAlignment="Top" Width="316" Height="46" Foreground="#FF665566" FontSize="20" FontFamily="Felix Titling" FontWeight="Bold"></Label>
+    </Grid>
+</Window>

@@ -1,0 +1,54 @@
+﻿<Window x:Class="MetricAnalyzerSoftwareQuality.AddAllParametrsWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MetricAnalyzerSoftwareQuality"
+        mc:Ignorable="d"
+        Title="Створення вхідних параметрів"  Height="280" Width="600" Icon="Images/icon_main.png" ResizeMode="NoResize" WindowStyle="None" Background="{x:Null}" BorderBrush="#FF5E86F0">
+    <Border BorderBrush="#FF3D71E0" Margin="1">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="9*"/>
+                <RowDefinition Height="94*"/>
+                <RowDefinition Height="27*"/>
+            </Grid.RowDefinitions>
+            <Grid.Background>
+                <SolidColorBrush Color="#FFF4F7FC"/>
+            </Grid.Background>
+            <DockPanel Grid.RowSpan="3">
+                <DockPanel Name="titleBar" DockPanel.Dock="Top" Height="35" Background="#FF1F75DC">
+                    <TextBlock Padding="8" VerticalAlignment="Center" HorizontalAlignment="Center" Text="Створення вхідних параметрів" Foreground="White" FontSize="24" FontFamily="Calibri" FontWeight="Bold"/>
+                </DockPanel>
+                
+                <!--^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^-->
+                <DataGrid x:Name="AllValueParametrs_dataGrid" HorizontalScrollBarVisibility="Hidden" ItemsSource = "{Binding Parameter}" RowHeight="23" ColumnWidth="*" Height="Auto" Margin="0,28,0,0" VerticalAlignment="Top" Width="550" BorderBrush="{x:Null}" AlternationCount="2" FrozenColumnCount="2" FontFamily="Bookman Old Style" FontSize="16" Cursor="Hand" AutoGenerateColumns="False" CanUserAddRows="False" CanUserDeleteRows="False" HorizontalGridLinesBrush="#FFD9EBF7" VerticalGridLinesBrush="{x:Null}" GridLinesVisibility="Horizontal" AutomationProperties.IsRowHeader="False" EnableRowVirtualization="False" HorizontalAlignment="Center" PreviewTextInput="TableInfoParametrs_PreviewTextInput" Foreground="#FF4134C3" AlternatingRowBackground="#FFF1FAFD">
+                    <DataGrid.Background>
+                        <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.InactiveBorderColorKey}}"/>
+                    </DataGrid.Background>
+                    <DataGrid.Columns>
+                        <DataGridTextColumn Binding="{Binding Number}" Foreground="#FF2840DA" Header="№ " Width="30"/>
+                        <DataGridTextColumn Binding="{Binding Value}" Foreground="#FFA82B1E" Header="    Значення" Width="130"/>
+                        <DataGridTextColumn Binding="{Binding Name}" Foreground="#FF2840DA" Header="                   Назва параметра"  Width="386"/>
+                    </DataGrid.Columns>
+                </DataGrid>
+                <!--^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^-->
+            </DockPanel>
+            
+            <!--^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^-->
+            <Button x:Name="CancelAddAllParametrs_Button" Content="Скасувати" HorizontalAlignment="Left" Height="41" Margin="50,0,0,0" Grid.Row="2" VerticalAlignment="Top" Width="148" FontWeight="Normal" FontFamily="Impact" Foreground="#FF403F5F" BorderBrush="{x:Null}" FontSize="18" Click="CancelAddAllParametrs_Button_Click">
+                <Button.Background>
+                    <ImageBrush ImageSource="Images/IconButton/btn_clean.png"/>
+                </Button.Background>
+            </Button>
+            <!--^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^-->
+            <Button x:Name="SaveAddAllParametrs_Button" Content="Зберегти" HorizontalAlignment="Left" Height="41" Margin="330,0,0,0" Grid.Row="2" VerticalAlignment="Top" Width="221" FontWeight="Normal" FontFamily="Impact" Foreground="#FF403F5F" BorderBrush="{x:Null}" FontSize="18" Click="SaveAddAllParametrs_Button_Click">
+                <Button.Background>
+                    <ImageBrush ImageSource="Images/IconButton/btn_analyze.png"/>
+                </Button.Background>
+            </Button>
+            <!--^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^-->
+
+        </Grid>
+    </Border>
+</Window>
