@@ -1,5 +1,5 @@
 # MASQ - Metric Analyzer Software Quality 
-![](/Readme images/github-readme-image-emblem.png)
+![](https://raw.githubusercontent.com/OlenkaA/MASQ/master/Readme%20images/github-readme-image-emblem.png)
 
 >As a result of the analysis of the current state of evaluation of software quality, as well as available tools and methods for its evaluation, it was found that there are a large number of them, but they are all separate and not unified. Therefore, there is a need for their generalization and development of a software tool that takes into account the influence of various factors in quality management.
 
@@ -37,7 +37,7 @@
 #### Clone the Repository
  As usual, you get started by cloning the project to your local machine:
  ```sh
- $ git://github.com/
+ $ git clone https://github.com/OlenkaA/MASQ.git
  ```
  
  
@@ -77,43 +77,43 @@ Used `technologys` and `tools`:
 
 <a name="markdown-header-class-diagram"></a>
 #### Class Diagram
-![](/Readme UML/github-readme-image-class-diagram.png)
+![](https://raw.githubusercontent.com/OlenkaA/MASQ/master/Readme%20UML/github-readme-image-class-diagram.png)
 
 <a name="markdown-header-sequence-diagram"></a>
 #### Sequence Diagram
-![](/Readme UML/github-readme-image-sequence-diagram.png)
+![](https://raw.githubusercontent.com/OlenkaA/MASQ/master/Readme%20UML/github-readme-image-sequence-diagram.png)
 
 <a name="markdown-header-use-case-diagram"></a>
 #### Use Case Diagram
-![](/Readme UML/github-readme-image-use-case-diagram.png)
+![](https://raw.githubusercontent.com/OlenkaA/MASQ/master/Readme%20UML/github-readme-image-use-case-diagram.png)
 
 
 
 <a name="markdown-header-project-screen-shots"></a>
 ## Project Screen Shots
 Get started with the program ***MASQ***. The initial application splash-window:
-![](/Readme images/github-readme-image-start-window.png)
+![](https://raw.githubusercontent.com/OlenkaA/MASQ/master/Readme%20images/github-readme-image-start-window.PNG)
 
 The main window of the program consists of a toolbar, a list of metrics, a workspace, a user logging area, a resulting area:
-![](/Readme images/github-readme-image-example-find-metric-1.png)
+![](https://raw.githubusercontent.com/OlenkaA/MASQ/master/Readme%20images/github-readme-image-example-find-metric-1.PNG)
 
 The working area of the quality metrics for each metric varies depending on the way of finding. For example, finding a *DP quality metric with predicted values* has such a workspace:
-![](/Readme images/github-readme-image-example-find-metric-2.png)
+![](https://raw.githubusercontent.com/OlenkaA/MASQ/master/Readme%20images/github-readme-image-example-find-metric-2.PNG)
 
 Also, there are metrics that are solved in several stages and use certain algorithms. Then there is a logical switch between the windows in search of the correct result. All results such metrics are submitted in formulas:
-![](/Readme images/github-readme-image-example-find-result.png)
+![](https://raw.githubusercontent.com/OlenkaA/MASQ/master/Readme%20images/github-readme-image-example-find-result.PNG)
 
 Besides the main features of the program there are additional options. Search for a specific metric, search for a parameter, enter the initial data, user manual, and so on:
-![](/Readme images/github-readme-image-all-possibility-in-use.png)
+![](https://raw.githubusercontent.com/OlenkaA/MASQ/master/Readme%20images/github-readme-image-all-possibility-in-use.PNG)
 
 The graphical representation of data takes place in three stages: tabular, histogram, graph. Also based on the results the program generate conclusion:
-![](/Readme images/github-readme-image-graphic-representation-of-results.png)
+![](https://raw.githubusercontent.com/OlenkaA/MASQ/master/Readme%20images/github-readme-image-graphic-representation-of-results.PNG)
 
 The complete user manual can be found [here].
 
 <a name="markdown-header-video-reporting"></a>
 ## Video Reporting
-[![Watch the video]()](/Readme images/MASQ-video-reporting.mp4)
+[![Watch the video]()](https://raw.githubusercontent.com/OlenkaA/MASQ/master/Readme%20images/MASQ-video-reporting.mp4)
 
 
 <a name="markdown-header-author"></a>
